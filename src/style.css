@@ -1,11 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
 }
@@ -16,7 +10,6 @@ body {
   width: 100%;
   justify-content: space-between;
   padding: 0 50px;
-  text-transform: uppercase;
   color: black;
 }
 
@@ -31,10 +24,10 @@ body {
 }
 
 :root {
-  --blue: #00acdc;
+  --color-blue: #00acdc;
 }
 
-.is-active::after {
+.nav__link.is-active::after {
   content: '';
   height: 4px;
   width: 100%;
@@ -63,6 +56,10 @@ body {
   display: flex;
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .nav__link:hover {
